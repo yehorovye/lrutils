@@ -21,7 +21,7 @@ less retarded utils, a coreutils replacement for less retarded people.
 - [ ] `du`
 - [ ] `install`
 - [ ] `ln`
-- [ ] `ls`
+- [x] `ls` (crls)
 - [ ] `mkfifo`
 - [ ] `mknod`
 - [ ] `mktemp`
