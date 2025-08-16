@@ -1,0 +1,16 @@
+*.cr   text eol=lf diff=crystal
+
+shard.lock text eol=lf
+
+*.md   text eol=lf
+*.txt  text eol=lf
+
+*.sh   text eol=lf
+*.bash text eol=lf
+
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+.gitignore text eol=lf
+.gitattributes text eol=lf
