@@ -3,22 +3,26 @@
 
 BUFFER_SIZE = 1_048_576
 
-def copy(src, dst)
-  buf = Bytes.new(BUFFER_SIZE)
-  while (n = src.read(buf)) > 0
-    dst.write buf[0, n]
-  end
-end
-
 if ARGV.empty?
-  copy(STDIN, STDOUT)
+  buf = Bytes.new(BUFFER_SIZE)
+  while (n = STDIN.read(buf)) > 0
+    STDOUT.write buf[0, n]
+  end
 else
   ARGV.each do |a|
     if a == "-"
-      copy(STDIN, STDOUT)
+      buf = Bytes.new(BUFFER_SIZE)
+      while (n = STDIN.read(buf)) > 0
+        STDOUT.write buf[0, n]
+      end
     else
       begin
-        File.open(a, "rb") { |f| copy(f, STDOUT) }
+        File.open(a, "rb") do |f|
+          buf = Bytes.new(BUFFER_SIZE)
+          while (n = f.read(buf)) > 0
+            STDOUT.write buf[0, n]
+          end
+        end
       rescue ex
         STDERR.puts "crat: #{a}: #{ex.message}"
         exit 1

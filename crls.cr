@@ -3,19 +3,21 @@
 
 # note: this code is wip as i would like to add some data from the dirs. ~elisiei
 
-def list(path)
+if ARGV.empty?
   begin
-    Dir.open(path) do |dir|
-      dir.each_child { |e| puts e }
-    end
+    Dir.open(".") { |dir| dir.each_child { |e| puts e } }
   rescue ex
-    STDERR.puts "crls: #{path}: #{ex.message}"
+    STDERR.puts "crls: .: #{ex.message}"
     exit 1
+  end
+else
+  ARGV.each do |p|
+    begin
+      Dir.open(p) { |dir| dir.each_child { |e| puts e } }
+    rescue ex
+      STDERR.puts "crls: #{p}: #{ex.message}"
+      exit 1
+    end
   end
 end
 
-if ARGV.empty?
-  list(".")
-else
-  ARGV.each { |p| list(p) }
-end

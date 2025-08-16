@@ -2,6 +2,14 @@
 
 less retarded utils, a coreutils replacement for less retarded people.
 
+# usage
+
+change and run `build.sh` and start using them.
+
+# requirements
+
+* crystal.
+
 # todo
 
 #### file
@@ -11,7 +19,7 @@ less retarded utils, a coreutils replacement for less retarded people.
 - [ ] `chgrp`
 - [ ] `chmod`
 - [ ] `chown`
-- [ ] `cp`
+- [x] `cp` (crp)
 - [ ] `cut`
 - [ ] `dd`
 - [ ] `df`
