@@ -12,36 +12,16 @@ change and run `build.sh` and start using them.
 
 # todo
 
-#### file
-
-- [x] `cat` (crat)
-- [ ] `chcon`
-- [ ] `chgrp`
-- [ ] `chmod`
-- [ ] `chown`
-- [x] `cp` (crp)
-- [ ] `cut`
-- [ ] `dd`
-- [ ] `df`
-- [ ] `dir`
-- [ ] `dircolors`
-- [ ] `dirname`
-- [ ] `du`
-- [ ] `install`
-- [ ] `ln`
 - [x] `ls` (crls)
-- [ ] `mkfifo`
-- [ ] `mknod`
-- [ ] `mktemp`
+- [x] `cp` (crp)
 - [ ] `mv`
-- [ ] `realpath`
 - [ ] `rm`
-- [ ] `rmdir`
-- [ ] `shred`
-- [ ] `sync`
+- [x] `cat` (crat)
+- [ ] `echo`
 - [ ] `touch`
-- [ ] `truncate`
-- [ ] `vdir`
+- [ ] `chmod`
+- [ ] `head`
+- [ ] `sort`
 
 # license
 
