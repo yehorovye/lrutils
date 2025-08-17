@@ -2,6 +2,13 @@
 
 less retarded utils, a coreutils replacement for less retarded people.
 
+# features
+
+* cross-platform.
+* minimal.
+* faster than coreutils LOL.
+* free as in freedom.
+
 # usage
 
 change and run `build.sh` and start using them.
@@ -14,10 +21,10 @@ change and run `build.sh` and start using them.
 
 - [x] `ls` (crls)
 - [x] `cp` (crp)
-- [ ] `mv`
-- [ ] `rm`
+- [x] `mv` (crmv)
+- [x] `rm` (crm)
 - [x] `cat` (crat)
-- [ ] `echo`
+- [x] `echo` (crecho)
 - [ ] `touch`
 - [ ] `chmod`
 - [ ] `head`
